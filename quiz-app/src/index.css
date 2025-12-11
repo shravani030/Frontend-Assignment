@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-[#e6f3ff];
+  font-family: 'Inter', sans-serif;
+}
+
+
+body {
+  @apply bg-gradient-to-br from-[#d7e7ff] via-[#c9eaff] to-[#98d7f9];
+  background-attachment: fixed;
+  font-family: 'Inter', sans-serif;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@keyframes pawBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+.animate-pawBounce {
+  animation: pawBounce 2.5s ease-in-out infinite;
+}
